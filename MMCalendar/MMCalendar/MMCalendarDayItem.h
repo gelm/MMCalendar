@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MMCalendarProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMCalendarDayItem : NSObject
+@interface MMCalendarDayItem : NSObject<MMCalendarDayDataSource>
    
 @property (nonatomic, strong) NSDate *date;
 @property (nonatomic, strong, readonly) NSString *dayString;

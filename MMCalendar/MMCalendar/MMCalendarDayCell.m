@@ -49,10 +49,10 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
+
     CGFloat width = CGRectGetWidth(self.bounds);
     CGFloat height = CGRectGetHeight(self.bounds);
-    
+
     _todayView.frame = (CGRect){0,0,26,26};
     _todayView.center = CGPointMake(width/2, height/2);
     _textLabel.frame = CGRectMake(0, 0, width, height);

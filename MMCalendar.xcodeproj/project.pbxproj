@@ -12,11 +12,11 @@
 		3AE37283221E5213001B86DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE37282221E5213001B86DC /* Assets.xcassets */; };
 		3AE37286221E5213001B86DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE37284221E5213001B86DC /* LaunchScreen.storyboard */; };
 		3AE37289221E5213001B86DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE37288221E5213001B86DC /* main.m */; };
-		3AE37293221E52CC001B86DC /* MMCalendarDayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE37292221E52CC001B86DC /* MMCalendarDayItem.m */; };
 		3AE37297221E5EB7001B86DC /* NSDate+MMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE37296221E5EB7001B86DC /* NSDate+MMExtension.m */; };
 		3AE3729A221EACE6001B86DC /* MMCalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE37299221EACE6001B86DC /* MMCalendarTool.m */; };
 		3AE3729D221EAD5B001B86DC /* MMCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3729C221EAD5B001B86DC /* MMCalendarDayCell.m */; };
 		3AE372A0221EB1A8001B86DC /* MMCalendarMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3729F221EB1A8001B86DC /* MMCalendarMonthView.m */; };
+		3AEC687422250B500083A2C0 /* MMCalendarDayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC687222250B500083A2C0 /* MMCalendarDayItem.m */; };
 		3AFE6D07221F9B5F00011274 /* MMCalendarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE6D06221F9B5F00011274 /* MMCalendarContentView.m */; };
 		3AFE6D0A221F9BBF00011274 /* MMCalendarDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE6D09221F9BBF00011274 /* MMCalendarDataProvider.m */; };
 		3AFE6D0E221FA07B00011274 /* MMCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE6D0D221FA07B00011274 /* MMCalendarManager.m */; };
@@ -33,8 +33,6 @@
 		3AE37287221E5213001B86DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AE37288221E5213001B86DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AE37290221E5286001B86DC /* MMCalendarProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCalendarProtocol.h; sourceTree = "<group>"; };
-		3AE37291221E52CC001B86DC /* MMCalendarDayItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCalendarDayItem.h; sourceTree = "<group>"; };
-		3AE37292221E52CC001B86DC /* MMCalendarDayItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCalendarDayItem.m; sourceTree = "<group>"; };
 		3AE37295221E5EB7001B86DC /* NSDate+MMExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+MMExtension.h"; sourceTree = "<group>"; };
 		3AE37296221E5EB7001B86DC /* NSDate+MMExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MMExtension.m"; sourceTree = "<group>"; };
 		3AE37298221EACE6001B86DC /* MMCalendarTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCalendarTool.h; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		3AE3729C221EAD5B001B86DC /* MMCalendarDayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCalendarDayCell.m; sourceTree = "<group>"; };
 		3AE3729E221EB1A8001B86DC /* MMCalendarMonthView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCalendarMonthView.h; sourceTree = "<group>"; };
 		3AE3729F221EB1A8001B86DC /* MMCalendarMonthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCalendarMonthView.m; sourceTree = "<group>"; };
+		3AEC687222250B500083A2C0 /* MMCalendarDayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCalendarDayItem.m; sourceTree = "<group>"; };
+		3AEC687322250B500083A2C0 /* MMCalendarDayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCalendarDayItem.h; sourceTree = "<group>"; };
 		3AFE6D05221F9B5F00011274 /* MMCalendarContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCalendarContentView.h; sourceTree = "<group>"; };
 		3AFE6D06221F9B5F00011274 /* MMCalendarContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCalendarContentView.m; sourceTree = "<group>"; };
 		3AFE6D08221F9BBF00011274 /* MMCalendarDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCalendarDataProvider.h; sourceTree = "<group>"; };
@@ -99,12 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				3AE37290221E5286001B86DC /* MMCalendarProtocol.h */,
-				3AE37291221E52CC001B86DC /* MMCalendarDayItem.h */,
-				3AE37292221E52CC001B86DC /* MMCalendarDayItem.m */,
 				3AE37295221E5EB7001B86DC /* NSDate+MMExtension.h */,
 				3AE37296221E5EB7001B86DC /* NSDate+MMExtension.m */,
 				3AE37298221EACE6001B86DC /* MMCalendarTool.h */,
 				3AE37299221EACE6001B86DC /* MMCalendarTool.m */,
+				3AEC687322250B500083A2C0 /* MMCalendarDayItem.h */,
+				3AEC687222250B500083A2C0 /* MMCalendarDayItem.m */,
 				3AE3729B221EAD5B001B86DC /* MMCalendarDayCell.h */,
 				3AE3729C221EAD5B001B86DC /* MMCalendarDayCell.m */,
 				3AE3729E221EB1A8001B86DC /* MMCalendarMonthView.h */,
@@ -195,11 +195,11 @@
 				3AFE6D07221F9B5F00011274 /* MMCalendarContentView.m in Sources */,
 				3AE37289221E5213001B86DC /* main.m in Sources */,
 				3AFE6D0A221F9BBF00011274 /* MMCalendarDataProvider.m in Sources */,
+				3AEC687422250B500083A2C0 /* MMCalendarDayItem.m in Sources */,
 				3AE3727B221E5211001B86DC /* AppDelegate.m in Sources */,
 				3AE37297221E5EB7001B86DC /* NSDate+MMExtension.m in Sources */,
 				3AE372A0221EB1A8001B86DC /* MMCalendarMonthView.m in Sources */,
 				3AE3729D221EAD5B001B86DC /* MMCalendarDayCell.m in Sources */,
-				3AE37293221E52CC001B86DC /* MMCalendarDayItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

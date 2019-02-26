@@ -25,3 +25,12 @@
 - (void)calendarMonthView:(MMCalendarMonthView *)calendarMonthView refreshWithItems:(NSArray<MMCalendarDayItem *> *)items;
 
 @end
+
+@protocol MMCalendarDayDataSource <NSObject>
+
+@property (nonatomic, readonly) NSDate *date;
+@property (nonatomic, readonly) NSString *dayString;
+@property (nonatomic, readonly) BOOL isToday;
+@property (nonatomic, readonly) BOOL hidden;
+
+@end
